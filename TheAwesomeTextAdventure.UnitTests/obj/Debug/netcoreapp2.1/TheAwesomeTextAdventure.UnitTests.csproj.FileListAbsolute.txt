@@ -1,0 +1,9 @@
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.deps.json
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.csprojAssemblyReference.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.csproj.CoreCompileInputs.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.AssemblyInfoInputs.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.AssemblyInfo.cs
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.UnitTests\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.UnitTests.pdb

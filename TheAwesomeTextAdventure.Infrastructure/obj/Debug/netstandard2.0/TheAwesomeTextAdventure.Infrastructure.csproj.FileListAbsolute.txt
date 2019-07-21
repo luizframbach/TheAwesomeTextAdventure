@@ -1,0 +1,12 @@
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.deps.json
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.csprojAssemblyReference.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.AssemblyInfoInputs.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.AssemblyInfo.cs
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Domain.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Domain.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.csproj.CopyComplete

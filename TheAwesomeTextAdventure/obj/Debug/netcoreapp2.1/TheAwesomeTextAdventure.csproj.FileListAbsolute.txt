@@ -1,0 +1,16 @@
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.deps.json
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.runtimeconfig.json
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.runtimeconfig.dev.json
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.csprojAssemblyReference.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.csproj.CoreCompileInputs.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.AssemblyInfoInputs.cache
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.AssemblyInfo.cs
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.Domain.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.Infrastructure.dll
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.Infrastructure.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\bin\Debug\netcoreapp2.1\TheAwesomeTextAdventure.Domain.pdb
+D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure\obj\Debug\netcoreapp2.1\TheAwesomeTextAdventure.csproj.CopyComplete
