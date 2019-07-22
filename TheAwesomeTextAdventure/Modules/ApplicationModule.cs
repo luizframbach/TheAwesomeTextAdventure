@@ -12,12 +12,14 @@ namespace TheAwesomeTextAdventure.Modules
     {
         public void Load(Container container, IConfiguration configuration)
         {
-            container.Register<IAdventureProcessor, AdventureProcessor>();
             container.Register<IAdventureInitializer, AdventureInitializer>();
+            container.Register<IAdventureProcessor, AdventureProcessor>();
+            container.Register<IRoomsProcessor, RoomsProcessor>();
 
             container.Register<IPlayerHandler, PlayerHandler>();
 
-            container.Register<IRoomsProcessor, RoomsProcessor>();
+            container.Register<IActionWrapper, ActionWrapper>();
+            container.Register<IExitWrapper, ExitWrapper>();
         }
     }
 }
