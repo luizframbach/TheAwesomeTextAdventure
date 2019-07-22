@@ -3,7 +3,7 @@ using SimpleInjector;
 using System;
 using TheAwesomeTextAdventure.Modules;
 using TheAwesomeTextAdventure.Modules.Extensions;
-using TheAwesomeTextAdventure.Processor.Abstractions;
+using TheAwesomeTextAdventure.Processors.Abstractions;
 
 namespace TheAwesomeTextAdventure
 {

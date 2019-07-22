@@ -1,4 +1,4 @@
-﻿namespace TheAwesomeTextAdventure.Processor.Abstractions
+﻿namespace TheAwesomeTextAdventure.Processors.Abstractions
 {
     public interface IRoomsProcessor
     {

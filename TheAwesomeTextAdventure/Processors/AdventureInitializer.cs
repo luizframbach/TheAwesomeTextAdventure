@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Infrastructure.Writers.Abstractions;
-using TheAwesomeTextAdventure.Processor.Abstractions;
+using TheAwesomeTextAdventure.Processors.Abstractions;
 using TheAwesomeTextAdventure.Services.Abstractions;
 
-namespace TheAwesomeTextAdventure.Processor
+namespace TheAwesomeTextAdventure.Processors
 {
     public class AdventureInitializer : BaseProcessor, IAdventureInitializer
     {
@@ -23,8 +23,10 @@ namespace TheAwesomeTextAdventure.Processor
 
         public AdventureInitializer(
             IPlayerWriter playerWriter,
+            IActionWrapper actionWrapper,
+            IExitWrapper exitWrapper,
             IAdventureProcessor adventureProcessor,
-            IPlayerHandler playerHandler) : base(playerWriter)
+            IPlayerHandler playerHandler) : base(playerWriter, actionWrapper, exitWrapper)
         {
             AdventureProcessor = adventureProcessor ?? throw new ArgumentNullException(nameof(adventureProcessor));
             PlayerHandler = playerHandler ?? throw new ArgumentNullException(nameof(playerHandler));

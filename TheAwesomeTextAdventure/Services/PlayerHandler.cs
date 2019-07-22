@@ -8,18 +8,22 @@ namespace TheAwesomeTextAdventure.Services
     public class PlayerHandler : IPlayerHandler
     {
         public IPlayerReader PlayerReader { get; }
-        
+
+        public IActionWrapper ActionWrapper { get; }
+
         public PlayerHandler(
-            IPlayerReader playerReader)
+            IPlayerReader playerReader,
+            IActionWrapper actionWrapper)
         {
             PlayerReader = playerReader ?? throw new ArgumentNullException(nameof(playerReader));
+            ActionWrapper = actionWrapper ?? throw new ArgumentNullException(nameof(actionWrapper));
         }
 
         public Player CreatePlayer()
         {
             StartPlayerCommunication();
 
-            var name = Console.ReadLine();
+            var name = ActionWrapper.ReadLine();
 
             var player = new Player(name);
 

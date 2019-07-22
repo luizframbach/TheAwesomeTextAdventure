@@ -1,6 +1,6 @@
 ﻿using TheAwesomeTextAdventure.Domain.Characters;
 
-namespace TheAwesomeTextAdventure.Processor.Abstractions
+namespace TheAwesomeTextAdventure.Processors.Abstractions
 {
     public interface IAdventureProcessor
     {
