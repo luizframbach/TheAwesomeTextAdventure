@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj": {}
+    "C:\\Users\\luiz_\\Documents\\GitHub\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj": {
+    "C:\\Users\\luiz_\\Documents\\GitHub\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\luiz_\\Documents\\GitHub\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj",
         "projectName": "TheAwesomeTextAdventure.Domain",
-        "projectPath": "D:\\Repos\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj",
+        "projectPath": "C:\\Users\\luiz_\\Documents\\GitHub\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\TheAwesomeTextAdventure.Domain.csproj",
         "packagesPath": "C:\\Users\\luiz_\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\obj\\",
+        "outputPath": "C:\\Users\\luiz_\\Documents\\GitHub\\TheAwesomeTextAdventure\\TheAwesomeTextAdventure.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

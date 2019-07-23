@@ -10,3 +10,15 @@ D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debu
 D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Domain.dll
 D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Domain.pdb
 D:\Repos\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.csproj.CopyComplete
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.deps.json
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.dll
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.pdb
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Domain.dll
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\bin\Debug\netstandard2.0\TheAwesomeTextAdventure.Domain.pdb
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.csprojAssemblyReference.cache
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.AssemblyInfo.cs
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.csproj.CopyComplete
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.dll
+C:\Users\luiz_\Documents\GitHub\TheAwesomeTextAdventure\TheAwesomeTextAdventure.Infrastructure\obj\Debug\netstandard2.0\TheAwesomeTextAdventure.Infrastructure.pdb

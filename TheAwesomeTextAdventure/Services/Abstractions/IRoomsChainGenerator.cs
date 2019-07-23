@@ -5,6 +5,6 @@ namespace TheAwesomeTextAdventure.Services.Abstractions
 {
     public interface IRoomsChainGenerator
     {
-        IList<Room> GetRooms();
+        IList<Room> GetShuffledRooms();
     }
 }

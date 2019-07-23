@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using TheAwesomeTextAdventure.Domain.Rooms;
 using TheAwesomeTextAdventure.Services.Abstractions;
 
@@ -9,11 +10,37 @@ namespace TheAwesomeTextAdventure.Services
     {
         public IList<Room> Rooms { get; }
 
-        public RoomsChainGenerator(List<Room> rooms)
+        public Room BossRoom { get; }
+
+        public IRandomRankGenerator RandomRankGenerator { get; }
+
+        public RoomsChainGenerator(
+            List<Room> rooms,
+            Room bossRoom,
+            IRandomRankGenerator randomRankGenerator)
+            
         {
             Rooms = rooms ?? throw new ArgumentNullException(nameof(rooms));
+            BossRoom = bossRoom ?? throw new ArgumentNullException(nameof(bossRoom));
+            RandomRankGenerator = randomRankGenerator ?? throw new ArgumentNullException(nameof(randomRankGenerator));
         }
 
-        public IList<Room> GetRooms() => Rooms;
+        public IList<Room> GetShuffledRooms()
+        {
+            var shuffledRooms = Rooms.Select(x => new
+            {
+                Rank = RandomRankGenerator.Next(), Room = x
+            });
+
+            var roomsOrderByRank = 
+                shuffledRooms
+                    .OrderBy(r => r.Rank)
+                    .Select(x => x.Room)
+                    .ToList();
+
+            roomsOrderByRank.Add(BossRoom);
+
+            return roomsOrderByRank;
+        }
     }
 }

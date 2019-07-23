@@ -20,6 +20,7 @@ namespace TheAwesomeTextAdventure.Modules
 
             container.Register<IActionWrapper, ActionWrapper>();
             container.Register<IExitWrapper, ExitWrapper>();
+            container.Register<IRandomRankGenerator, RandomRankGenerator>();
         }
     }
 }
