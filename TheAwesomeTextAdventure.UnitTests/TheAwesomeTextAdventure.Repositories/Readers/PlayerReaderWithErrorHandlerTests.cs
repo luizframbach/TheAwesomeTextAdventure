@@ -21,9 +21,9 @@ namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Repositories
         public void ReadPlayer_ShouldCallPlayerReader(
             PlayerReaderWithErrorHandler sut)
         {
-            sut.ReadPlayer();
+            sut.Read();
 
-            sut.PlayerReader.Received().ReadPlayer();
+            sut.PlayerReader.Received().Read();
         }
     }
 }

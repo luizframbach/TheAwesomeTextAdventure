@@ -1,8 +1,9 @@
 ﻿using System;
-using System.IO;
+using System.Diagnostics.CodeAnalysis;
 using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Infrastructure.Readers.Abstractions;
 using TheAwesomeTextAdventure.Infrastructure.Serializers.Abstractions;
+using TheAwesomeTextAdventure.Infrastructure.Services.Abstractions;
 
 namespace TheAwesomeTextAdventure.Infrastructure.Readers
 {
@@ -10,31 +11,33 @@ namespace TheAwesomeTextAdventure.Infrastructure.Readers
     {
         public ICustomSerialization CustomSerialization { get; }
 
-        public string SavePath { get; }
+        public IConfigurationReader ConfigurationReader { get; }
+
+        public IFileHandler FileHandler { get; }
 
         public PlayerReader(
-            ICustomSerialization customSerialization, 
-            string savePath)
+            ICustomSerialization customSerialization,
+            IConfigurationReader configurationReader,
+            IFileHandler fileHandler)
         {
             CustomSerialization = customSerialization ?? throw new ArgumentNullException(nameof(customSerialization));
-            SavePath = savePath ?? throw new ArgumentNullException(nameof(savePath));
+            ConfigurationReader = configurationReader ?? throw new ArgumentNullException(nameof(configurationReader));
+            FileHandler = fileHandler ?? throw new ArgumentNullException(nameof(fileHandler));
         }
 
-        public Player ReadPlayer()
+        [ExcludeFromCodeCoverage]
+        public Player Read()
         {
-            if (!File.Exists(SavePath))
-                return null;
+            var path = ConfigurationReader.ReadSavePathWithPlayerArchive();
 
-            using (StreamReader sr = File.OpenText(SavePath))
+            using (var sr = FileHandler.OpenText(path))
             {
-                string s = "";
-                while ((s = sr.ReadLine()) != null)
-                {
-                    Console.WriteLine(s);
-                }
-            }
+                var contentArchive = sr.ReadLine();
 
-            return new Player("steste");
+                var player = CustomSerialization.Deserialize(contentArchive, typeof(Player));
+
+                return (Player)player;
+            }
         }
     }
 }

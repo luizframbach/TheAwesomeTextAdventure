@@ -13,11 +13,11 @@ namespace TheAwesomeTextAdventure.Infrastructure.Writers
             PlayerWriter = playerWriter ?? throw new ArgumentNullException(nameof(playerWriter));
         }
 
-        public void WritePlayer(Player player)
+        public void Write(Player player)
         {
             try
             {
-                PlayerWriter.WritePlayer(player);
+                PlayerWriter.Write(player);
             }
             catch (Exception e)
             {

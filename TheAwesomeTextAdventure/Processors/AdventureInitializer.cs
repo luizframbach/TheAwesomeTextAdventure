@@ -17,7 +17,7 @@ namespace TheAwesomeTextAdventure.Processors
             => new Dictionary<string, Action>
             {
                 { "NOVO JOGO", () => StartAdventure(null) },
-                { "CARREGAR JOGO SALVO", () => StartAdventure(LoadPlayer())},
+                { "CARREGAR JOGO SALVO", () => LoadPlayer()},
                 { "SAIR", Exit },
             };
 
@@ -45,7 +45,19 @@ namespace TheAwesomeTextAdventure.Processors
             AdventureProcessor.StartAdventure(player);
         }
 
-        private Player LoadPlayer()
-            => PlayerHandler.LoadPlayer();
+        private void LoadPlayer()
+        {
+            var player = PlayerHandler.LoadPlayer();
+
+            if (player == null)
+            {
+                Console.WriteLine("NAO EXISTE JOGO SALVO :(");
+                Console.WriteLine("O QUE GOSTARIA DE FAZER?");
+
+                StartGame();
+            }
+
+            StartAdventure(player);
+        }
     }
 }

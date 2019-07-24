@@ -23,9 +23,9 @@ namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Repositories
             Player player,
             PlayerWriterWithErrorHandler sut)
         {
-            sut.WritePlayer(player);
+            sut.Write(player);
 
-            sut.PlayerWriter.Received().WritePlayer(player);
+            sut.PlayerWriter.Received().Write(player);
         }
     }
 }

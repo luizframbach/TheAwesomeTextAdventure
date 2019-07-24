@@ -33,7 +33,7 @@ namespace TheAwesomeTextAdventure.Services
         }
 
         public Player LoadPlayer()
-            => PlayerReader.ReadPlayer();
+            => PlayerReader.Read();
 
         private static void StartPlayerCommunication()
         {

@@ -13,11 +13,11 @@ namespace TheAwesomeTextAdventure.Infrastructure.Readers
             PlayerReader = playerReader ?? throw new ArgumentNullException(nameof(playerReader));
         }
 
-        public Player ReadPlayer()
+        public Player Read()
         {
             try
             {
-                return PlayerReader.ReadPlayer();
+                return PlayerReader.Read();
             }
             catch (Exception e)
             {

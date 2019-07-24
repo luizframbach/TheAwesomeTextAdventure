@@ -36,7 +36,7 @@ namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Services
             Player playerResult,
             PlayerHandler sut)
         {
-            sut.PlayerReader.ReadPlayer().Returns(playerResult);
+            sut.PlayerReader.Read().Returns(playerResult);
 
             var player = sut.LoadPlayer();
 

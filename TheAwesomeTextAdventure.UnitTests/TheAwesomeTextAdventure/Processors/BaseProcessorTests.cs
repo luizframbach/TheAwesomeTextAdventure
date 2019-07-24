@@ -32,7 +32,7 @@ namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Processors
         { 
             sut.SaveProcess(player);
 
-            sut.PlayerWriter.Received().WritePlayer(player);
+            sut.PlayerWriter.Received().Write(player);
         }
     }
 }

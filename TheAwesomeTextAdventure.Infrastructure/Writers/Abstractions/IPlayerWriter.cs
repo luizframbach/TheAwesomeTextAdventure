@@ -4,6 +4,6 @@ namespace TheAwesomeTextAdventure.Infrastructure.Writers.Abstractions
 {
     public interface IPlayerWriter
     {
-        void WritePlayer(Player player);
+        void Write(Player player);
     }
 }

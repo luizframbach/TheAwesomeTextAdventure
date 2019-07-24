@@ -52,6 +52,6 @@ namespace TheAwesomeTextAdventure.Processors
             => ExitWrapper.Exit();
 
         public void SaveProcess(Player player)
-            => PlayerWriter.WritePlayer(player);
+            => PlayerWriter.Write(player);
     }
 }
