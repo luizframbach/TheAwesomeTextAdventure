@@ -2,7 +2,7 @@
 using FluentAssertions;
 using TheAwesomeTextAdventure.Infrastructure.Readers;
 using TheAwesomeTextAdventure.Infrastructure.Readers.Abstractions;
-using TheAwesomeTextAdventure.UnitTests.AutoFixture;
+using TheAwesomeTextAdventure.UnitTests.AutoFixture.Attributes;
 using Xunit;
 
 namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Repositories.Readers

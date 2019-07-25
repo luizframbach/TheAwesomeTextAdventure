@@ -4,7 +4,7 @@ using NSubstitute;
 using System.Linq;
 using TheAwesomeTextAdventure.Services;
 using TheAwesomeTextAdventure.Services.Abstractions;
-using TheAwesomeTextAdventure.UnitTests.AutoFixture;
+using TheAwesomeTextAdventure.UnitTests.AutoFixture.Attributes;
 using Xunit;
 
 namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Services

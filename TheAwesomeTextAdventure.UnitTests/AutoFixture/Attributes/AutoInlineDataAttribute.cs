@@ -1,7 +1,7 @@
 ﻿using AutoFixture.Xunit2;
 using Xunit;
 
-namespace TheAwesomeTextAdventure.UnitTests.AutoFixture
+namespace TheAwesomeTextAdventure.UnitTests.AutoFixture.Attributes
 {
     public class AutoInlineDataAttribute : CompositeDataAttribute
     {

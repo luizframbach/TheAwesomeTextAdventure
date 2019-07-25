@@ -3,7 +3,7 @@ using NSubstitute;
 using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Processors;
 using TheAwesomeTextAdventure.Processors.Abstractions;
-using TheAwesomeTextAdventure.UnitTests.AutoFixture;
+using TheAwesomeTextAdventure.UnitTests.AutoFixture.Attributes;
 using Xunit;
 
 namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Processors

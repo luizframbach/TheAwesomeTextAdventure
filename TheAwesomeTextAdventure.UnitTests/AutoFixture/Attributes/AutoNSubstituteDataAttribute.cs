@@ -1,9 +1,9 @@
-﻿using AutoFixture;
+﻿using System;
+using AutoFixture;
 using AutoFixture.AutoNSubstitute;
 using AutoFixture.Xunit2;
-using System;
 
-namespace TheAwesomeTextAdventure.UnitTests.AutoFixture
+namespace TheAwesomeTextAdventure.UnitTests.AutoFixture.Attributes
 {
     public class AutoNSubstituteDataAttribute : AutoDataAttribute
     {

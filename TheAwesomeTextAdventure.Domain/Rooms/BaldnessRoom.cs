@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Domain.Enemies;
 
 namespace TheAwesomeTextAdventure.Domain.Rooms
@@ -9,13 +11,23 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
 
         const string _endHistory = "baldness room end";
 
-        public new static IList<Enemy> Enemies => new List<Enemy>
+        private new static IList<Enemy> Enemies => new List<Enemy>
         {
             new BaldnessMonster()
         };
 
-        public BaldnessRoom() : base(_startHistory, _endHistory, Enemies)
+        public Dictionary<string, Action<Player>> _actionList
+            => new Dictionary<string, Action<Player>>
+            {
+                { "1", x => SetFinished() },
+            };
+
+        public BaldnessRoom() :
+            base(_startHistory,
+                _endHistory,
+                Enemies)
         {
+            SetActions(_actionList);
         }
     }
 }

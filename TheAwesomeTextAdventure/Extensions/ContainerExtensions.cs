@@ -1,9 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System;
+using Microsoft.Extensions.Configuration;
 using SimpleInjector;
-using System;
 using TheAwesomeTextAdventure.Modules.Abstractions;
 
-namespace TheAwesomeTextAdventure.Modules.Extensions
+namespace TheAwesomeTextAdventure.Extensions
 {
     public static class ContainerExtensions
     {

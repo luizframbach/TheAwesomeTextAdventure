@@ -1,4 +1,4 @@
-﻿namespace TheAwesomeTextAdventure.Services.Abstractions
+﻿namespace TheAwesomeTextAdventure.Wrappers.Abstractions
 {
     public interface IExitWrapper
     {

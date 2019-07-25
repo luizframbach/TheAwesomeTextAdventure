@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Domain.Enemies;
 
 namespace TheAwesomeTextAdventure.Domain.Rooms
@@ -14,8 +16,18 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
             new AngryBarber()
         };
 
-        public BarberShopRoom() : base(_startHistory, _endHistory, Enemies)
+        public Dictionary<string, Action<Player>> _actionList
+            => new Dictionary<string, Action<Player>>
+            {
+                {"1", x => SetFinished()},
+            };
+
+        public BarberShopRoom() : base(
+            _startHistory,
+            _endHistory,
+            Enemies)
         {
+            SetActions(_actionList);
         }
     }
 }

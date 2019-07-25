@@ -1,9 +1,10 @@
 ﻿using System;
 using TheAwesomeTextAdventure.Domain.Characters;
+using TheAwesomeTextAdventure.Handlers.Abstractions;
 using TheAwesomeTextAdventure.Infrastructure.Readers.Abstractions;
-using TheAwesomeTextAdventure.Services.Abstractions;
+using TheAwesomeTextAdventure.Wrappers.Abstractions;
 
-namespace TheAwesomeTextAdventure.Services
+namespace TheAwesomeTextAdventure.Handlers
 {
     public class PlayerHandler : IPlayerHandler
     {

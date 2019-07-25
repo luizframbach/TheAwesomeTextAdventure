@@ -1,6 +1,6 @@
 ﻿using TheAwesomeTextAdventure.Domain.Characters;
 
-namespace TheAwesomeTextAdventure.Services.Abstractions
+namespace TheAwesomeTextAdventure.Handlers.Abstractions
 {
     public interface IPlayerHandler
     {

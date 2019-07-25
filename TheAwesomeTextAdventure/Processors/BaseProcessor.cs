@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Infrastructure.Writers.Abstractions;
-using TheAwesomeTextAdventure.Services.Abstractions;
+using TheAwesomeTextAdventure.Wrappers.Abstractions;
 
 namespace TheAwesomeTextAdventure.Processors
 {

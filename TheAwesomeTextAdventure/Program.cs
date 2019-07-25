@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using SimpleInjector;
 using System;
+using TheAwesomeTextAdventure.Extensions;
 using TheAwesomeTextAdventure.Modules;
-using TheAwesomeTextAdventure.Modules.Extensions;
 using TheAwesomeTextAdventure.Processors.Abstractions;
 
 namespace TheAwesomeTextAdventure

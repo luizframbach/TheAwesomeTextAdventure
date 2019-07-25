@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using TheAwesomeTextAdventure.Domain.Characters;
+using TheAwesomeTextAdventure.Handlers.Abstractions;
 using TheAwesomeTextAdventure.Infrastructure.Writers.Abstractions;
 using TheAwesomeTextAdventure.Processors.Abstractions;
-using TheAwesomeTextAdventure.Services.Abstractions;
+using TheAwesomeTextAdventure.Wrappers.Abstractions;
 
 namespace TheAwesomeTextAdventure.Processors
 {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using TheAwesomeTextAdventure.Services.Abstractions;
+using TheAwesomeTextAdventure.Wrappers.Abstractions;
 
-namespace TheAwesomeTextAdventure.Services
+namespace TheAwesomeTextAdventure.Wrappers
 {
     [ExcludeFromCodeCoverage]
     public class ActionWrapper : IActionWrapper

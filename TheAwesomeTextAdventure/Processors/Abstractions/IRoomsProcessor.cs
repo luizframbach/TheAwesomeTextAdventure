@@ -1,7 +1,9 @@
-﻿namespace TheAwesomeTextAdventure.Processors.Abstractions
+﻿using TheAwesomeTextAdventure.Domain.Characters;
+
+namespace TheAwesomeTextAdventure.Processors.Abstractions
 {
     public interface IRoomsProcessor
     {
-        void StartProcessing(object player);
+        void StartProcessing(Player player);
     }
 }

@@ -3,7 +3,7 @@ using NSubstitute;
 using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Infrastructure.Writers;
 using TheAwesomeTextAdventure.Infrastructure.Writers.Abstractions;
-using TheAwesomeTextAdventure.UnitTests.AutoFixture;
+using TheAwesomeTextAdventure.UnitTests.AutoFixture.Attributes;
 using Xunit;
 
 namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Repositories.Writers

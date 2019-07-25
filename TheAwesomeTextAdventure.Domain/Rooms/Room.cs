@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Domain.Enemies;
 
 namespace TheAwesomeTextAdventure.Domain.Rooms
@@ -12,6 +13,10 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
 
         public IList<Enemy> Enemies { get; }
 
+        public Dictionary<string, Action<Player>> ActionList { get; private set; }
+
+        public bool Finished { get; private set; }
+
         public Room(
             string history,
             string endingHistory,
@@ -20,6 +25,14 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
             History = history ?? throw new ArgumentNullException(nameof(history));
             EndingHistory = endingHistory ?? throw new ArgumentNullException(nameof(endingHistory));
             Enemies = enemies ?? throw new ArgumentNullException(nameof(enemies));
+            ActionList = new Dictionary<string, Action<Player>>();
+            Finished = false;
         }
+
+        public void SetFinished()
+            => Finished = true;
+
+        public void SetActions(Dictionary<string, Action<Player>> actionList)
+            => ActionList = actionList;
     }
 }

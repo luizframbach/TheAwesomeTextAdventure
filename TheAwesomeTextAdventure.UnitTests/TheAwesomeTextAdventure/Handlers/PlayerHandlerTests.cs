@@ -2,12 +2,12 @@
 using FluentAssertions;
 using NSubstitute;
 using TheAwesomeTextAdventure.Domain.Characters;
-using TheAwesomeTextAdventure.Services;
-using TheAwesomeTextAdventure.Services.Abstractions;
-using TheAwesomeTextAdventure.UnitTests.AutoFixture;
+using TheAwesomeTextAdventure.Handlers;
+using TheAwesomeTextAdventure.Handlers.Abstractions;
+using TheAwesomeTextAdventure.UnitTests.AutoFixture.Attributes;
 using Xunit;
 
-namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Services
+namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Handlers
 {
     public class PlayerHandlerTests
     {

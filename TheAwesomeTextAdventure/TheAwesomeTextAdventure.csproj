@@ -15,4 +15,8 @@
     <ProjectReference Include="..\TheAwesomeTextAdventure.Infrastructure\TheAwesomeTextAdventure.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Handlers\Abstractions\" />
+  </ItemGroup>
+
 </Project>
