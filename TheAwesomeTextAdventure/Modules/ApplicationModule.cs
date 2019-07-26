@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using SimpleInjector;
 using System.Collections.Generic;
+using TheAwesomeTextAdventure.BattleProcessors;
+using TheAwesomeTextAdventure.BattleProcessors.Abstractions;
 using TheAwesomeTextAdventure.Domain.Rooms;
 using TheAwesomeTextAdventure.Handlers;
 using TheAwesomeTextAdventure.Handlers.Abstractions;
@@ -32,18 +34,20 @@ namespace TheAwesomeTextAdventure.Modules
             container.Register<IExitWrapper, ExitWrapper>();
 
             //Services
-            container.Register<IRandomRankGenerator, RandomRankGenerator>();
+            container.Register<IRandomNumberGenerator, RandomNumberGenerator>();
             container.Register<IRoomsChainGenerator>(() =>
                     new RoomsChainGenerator(
                         new List<Room>
                         {
                             new BaldnessRoom(),
-                            new BarberShopRoom(),
-                            new FirstRoom()
+                            new BarberShopRoom()
                         },
                         new BossRoom(),
-                        container.GetInstance<IRandomRankGenerator>())
+                        container.GetInstance<IRandomNumberGenerator>())
             );
+
+            //BattleProcessors
+            container.Register<IBattleProcessor, BetaBattleProcessor>();
         }
     }
 }

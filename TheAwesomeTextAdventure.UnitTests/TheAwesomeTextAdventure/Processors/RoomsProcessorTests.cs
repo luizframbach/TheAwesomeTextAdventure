@@ -38,7 +38,11 @@ namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Processors
 
             sut.RoomsChainGenerator.Received().GetShuffledRooms();
 
-            sut.RoomHandler.Received().EndRoomHistory(Arg.Any<Room>());
+            sut.RoomHandler.Received().StartRoomHistory(room);
+
+            sut.RoomHandler.Received().ReadPossibleActions(room);
+
+            sut.RoomHandler.Received().EndRoomHistory(room);
         }
     }
 }

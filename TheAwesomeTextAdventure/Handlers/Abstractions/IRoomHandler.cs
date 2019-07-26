@@ -12,5 +12,6 @@ namespace TheAwesomeTextAdventure.Handlers.Abstractions
             Room room,
             Player player,
             string action);
+        void ReadPossibleActions(Room room);
     }
 }

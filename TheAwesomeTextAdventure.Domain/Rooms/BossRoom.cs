@@ -7,9 +7,12 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
 {
     public class BossRoom : Room
     {
-        const string _startHistory = "Boss room start";
+        const string _startHistory = "FINALMENTE VOCE CHEGA NA ULTIMA SALA, E ENCONTRA UMA PESSOA COM UM BIGODE LINDO DE MORRER, COM CERTEZA E SEU RIVAL! VAI LA E DERROTE ELE E TENHA O BIGODE MAIS LINDO DO MUNDO";
 
         const string _endHistory = "PARABENS VOCE É O GRANDE BIGODUDO, A PESSOA QUE POSSUI O BIGODE MAIS LINDO DO MUNDO!";
+
+        private const string _battleHistory =
+            "VOCE CORRE EM DIREÇAO AO SEU RIVAl, PARA SE TENTAR DERROTA-LO";
 
         public new static IList<Enemy> Enemies => new List<Enemy>
         {
@@ -19,7 +22,8 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
         public Dictionary<string, Action<Player>> _actionList
             => new Dictionary<string, Action<Player>>
             {
-                { "1", x => SetFinished() },
+                {"OLHAR PARA OS LADOS", x =>  Console.WriteLine(SearchForAnything())},
+                {"ENFRENTAR O RIVAL", x => SetBattleOn()}
             };
 
         public BossRoom() : base(
@@ -29,5 +33,8 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
         {
             SetActions(_actionList);
         }
+
+        private string SearchForAnything()
+            => "VOCE TENTA OLHAR PELA SALA, PARA TENTAR ACHAR ALGUM MEIO DE DERROTAR SEU ADVERSARIO MAS PARECE SER MEIO IMPOSSIVEL";
     }
 }

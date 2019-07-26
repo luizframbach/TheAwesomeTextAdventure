@@ -7,19 +7,20 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
 {
     public class BarberShopRoom : Room
     {
-        const string _startHistory = "Uma Barbearia abandonada!";
+        const string _startHistory = "ESTA SALA PARECE UMA BARBEARIA ABANDONADA, COM DESTROÇOS E RESTOS DE CABELO PARA TODO LADO, CUIDADO POR ONDE ANDA AVENTUREIRO";
 
-        const string _endHistory = "barber room end";
+        const string _endHistory = "VOCE SEGUIU EM FRENTE, MESMO COM MUITOS OBSTACULOS E SUJEIRA E CONSEGUIU IR PARA A OUTRA SALA";
 
         public new static IList<Enemy> Enemies => new List<Enemy>
         {
-            new AngryBarber()
+            new AngryBarber() 
         };
 
         public Dictionary<string, Action<Player>> _actionList
             => new Dictionary<string, Action<Player>>
             {
-                {"1", x => SetFinished()},
+                {"OLHAR PARA OS LADOS", x =>  Console.WriteLine(SearchForAnything())},
+                {"SEGUIR EM FRENTE", x => SetFinished()},
             };
 
         public BarberShopRoom() : base(
@@ -29,5 +30,8 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
         {
             SetActions(_actionList);
         }
+
+        private string SearchForAnything()
+            => "VOCE OLHA PARA TODO LADO TENTANDO ACHAR ALGUMA PISTA, MAS SO ENCONTRA EQUIPAMENTO VELHO E MUITO CABELO";
     }
 }

@@ -17,6 +17,8 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
 
         public bool Finished { get; private set; }
 
+        public bool StartBattle { get; private set; }
+
         public Room(
             string history,
             string endingHistory,
@@ -27,10 +29,14 @@ namespace TheAwesomeTextAdventure.Domain.Rooms
             Enemies = enemies ?? throw new ArgumentNullException(nameof(enemies));
             ActionList = new Dictionary<string, Action<Player>>();
             Finished = false;
+            StartBattle = false;
         }
 
         public void SetFinished()
             => Finished = true;
+
+        public void SetBattleOn()
+            => StartBattle = true;
 
         public void SetActions(Dictionary<string, Action<Player>> actionList)
             => ActionList = actionList;

@@ -12,24 +12,24 @@ namespace TheAwesomeTextAdventure.Services
 
         public Room BossRoom { get; }
 
-        public IRandomRankGenerator RandomRankGenerator { get; }
+        public IRandomNumberGenerator RandomNumberGenerator { get; }
 
         public RoomsChainGenerator(
             List<Room> rooms,
             Room bossRoom,
-            IRandomRankGenerator randomRankGenerator)
+            IRandomNumberGenerator randomNumberGenerator)
             
         {
             Rooms = rooms ?? throw new ArgumentNullException(nameof(rooms));
             BossRoom = bossRoom ?? throw new ArgumentNullException(nameof(bossRoom));
-            RandomRankGenerator = randomRankGenerator ?? throw new ArgumentNullException(nameof(randomRankGenerator));
+            RandomNumberGenerator = randomNumberGenerator ?? throw new ArgumentNullException(nameof(randomNumberGenerator));
         }
 
         public IList<Room> GetShuffledRooms()
         {
             var shuffledRooms = Rooms.Select(x => new
             {
-                Rank = RandomRankGenerator.Next(), Room = x
+                Rank = RandomNumberGenerator.Next(), Room = x
             });
 
             var roomsOrderByRank = 

@@ -30,5 +30,15 @@ namespace TheAwesomeTextAdventure.Handlers
 
             room.ActionList[action].Invoke(player);
         }
+
+        public void ReadPossibleActions(Room room)
+        {
+            Console.WriteLine("ESSAS SAO AS POSSIVEIS AÇOES DA SALA");
+
+            foreach (var action in room.ActionList)
+            {
+                Console.WriteLine(action.Key);
+            }
+        }
     }
 }

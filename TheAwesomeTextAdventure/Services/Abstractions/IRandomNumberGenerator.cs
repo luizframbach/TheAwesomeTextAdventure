@@ -1,6 +1,6 @@
 ﻿namespace TheAwesomeTextAdventure.Services.Abstractions
 {
-    public interface IRandomRankGenerator
+    public interface IRandomNumberGenerator
     {
         int Next();
     }

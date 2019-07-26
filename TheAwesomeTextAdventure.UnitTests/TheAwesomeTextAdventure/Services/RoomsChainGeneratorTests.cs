@@ -23,7 +23,7 @@ namespace TheAwesomeTextAdventure.UnitTests.TheAwesomeTextAdventure.Services
         public void GetShuffledRooms_ShouldReturnCorrectlyRooms(
             RoomsChainGenerator sut)
         {
-            sut.RandomRankGenerator.Next().Returns(1);
+            sut.RandomNumberGenerator.Next().Returns(1);
 
             var shuffledRooms = sut.GetShuffledRooms();
 

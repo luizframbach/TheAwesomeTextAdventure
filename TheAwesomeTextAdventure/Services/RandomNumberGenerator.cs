@@ -5,7 +5,7 @@ using TheAwesomeTextAdventure.Services.Abstractions;
 namespace TheAwesomeTextAdventure.Services
 {
     [ExcludeFromCodeCoverage]
-    public class RandomRankGenerator : IRandomRankGenerator
+    public class RandomNumberGenerator : IRandomNumberGenerator
     {
         public int Next() => new Random().Next();
     }

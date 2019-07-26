@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TheAwesomeTextAdventure.BattleProcessors.Abstractions;
 using TheAwesomeTextAdventure.Domain.Characters;
 using TheAwesomeTextAdventure.Extensions;
 using TheAwesomeTextAdventure.Handlers.Abstractions;
@@ -16,6 +17,8 @@ namespace TheAwesomeTextAdventure.Processors
 
         public IRoomHandler RoomHandler { get; }
 
+        public IBattleProcessor BattleProcessor { get; }
+
         private Dictionary<string, Action<Player>> _actionList
             => new Dictionary<string, Action<Player>>
             {
@@ -28,10 +31,12 @@ namespace TheAwesomeTextAdventure.Processors
             IActionWrapper actionWrapper,
             IExitWrapper exitWrapper, 
             IRoomsChainGenerator roomsChainGenerator, 
-            IRoomHandler roomHandler) : base(playerWriter, actionWrapper, exitWrapper)
+            IRoomHandler roomHandler,
+            IBattleProcessor battleProcessor) : base(playerWriter, actionWrapper, exitWrapper)
         {
             RoomsChainGenerator = roomsChainGenerator ?? throw new ArgumentNullException(nameof(roomsChainGenerator));
             RoomHandler = roomHandler ?? throw new ArgumentNullException(nameof(roomHandler));
+            BattleProcessor = battleProcessor ?? throw new ArgumentNullException(nameof(battleProcessor));
         }
 
         public void StartProcessing(Player player)
@@ -44,9 +49,14 @@ namespace TheAwesomeTextAdventure.Processors
 
                 RoomHandler.StartRoomHistory(room);
 
+                RoomHandler.ReadPossibleActions(room);
+
                 while (room.Finished == false)
                 {
                     RoomHandler.ReadRoomActions(room, player, ActionWrapper.ReadLine());
+
+                    if (room.StartBattle)
+                        BattleProcessor.StartBattle(player, room);
                 }
 
                 RoomHandler.EndRoomHistory(room);
